@@ -16,13 +16,13 @@ public class Oferta {
     private LocalDate fechaFin;
     private Double costoPersona = 0.0;
 
-    private Local local;
+    private Empresa local;
     protected OfertaValidacion validacion = new OfertaValidacion();
 
     public Oferta() {
     }
 
-    public Oferta(Util util, Integer id, String titulo, String descripcion, LocalDate fechaInicio, LocalDate fechaFin, Double costoPersona, Local local) {
+    public Oferta(Util util, Integer id, String titulo, String descripcion, LocalDate fechaInicio, LocalDate fechaFin, Double costoPersona, Empresa local) {
         this.util = util;
         this.id = id;
         this.titulo = titulo;
@@ -110,11 +110,11 @@ public class Oferta {
             System.out.println("\u001B[37m" + error.getMessage() +  "\u001B[0m");
     }}
 
-    public Local getLocal() {
+    public Empresa getLocal() {
         return local;
     }
 
-    public void setLocal(Local local) {
+    public void setLocal(Empresa local) {
         this.local = local;
     }
 }

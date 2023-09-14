@@ -6,7 +6,7 @@ import org.example.validaciones.UsuarioValidacion;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Usuario {
+public abstract class Usuario {
 
     protected Util util = new Util();
     private Integer id;
@@ -82,6 +82,12 @@ public class Usuario {
            System.out.println("\u001B[37m" + error.getMessage() +  "\u001B[0m");
        }
     }
+
+
+    //1.Registrarse en plataforma
+    public abstract Boolean registrar();
+
+
 }
 
 

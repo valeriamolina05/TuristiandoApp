@@ -4,15 +4,14 @@ package org.example.validaciones;
 import org.example.utilidades.Mensaje;
 import org.example.utilidades.Util;
 
-public class LocalValidacion {
+public class EmpresaValidacion {
 
     protected Util util = new Util();
 
-    public LocalValidacion() {
+    public EmpresaValidacion() {
     }
 
     public boolean validarNit (String nit) throws Exception{
-        //1. Validar que el nit tenga 10 digitos
         if (nit.length() != 10) {
             throw new Exception(Mensaje.NIT_INVALIDO.getMensaje());
         } else if (!util.validarExpresionRegular(nit, "^[0-9]+$")) {
@@ -23,7 +22,6 @@ public class LocalValidacion {
     }
 
     public boolean validarNombre(String nombre) throws Exception {
-        // 1. Validar que el nombre tenga máximo 30 caracteres
         if (nombre.length() > 30) {
             throw new Exception(Mensaje.NOMBRE_LOCAL_INVALIDO.getMensaje());
         } else if (!util.validarExpresionRegular(nombre,"^[a-zA-Z]+$")) {
