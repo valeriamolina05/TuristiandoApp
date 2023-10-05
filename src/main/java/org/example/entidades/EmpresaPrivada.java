@@ -6,10 +6,10 @@ import org.example.validaciones.EmpresaPrivadaValidacion;
 public class EmpresaPrivada extends Empresa implements Ireporte {
 
     private String nombreRepresentante;
-    @Override
+    /*@Override
     public Boolean cobrar() {
         return false;
-    }
+    }*/
 
     private EmpresaPrivadaValidacion validacion = new EmpresaPrivadaValidacion();
 

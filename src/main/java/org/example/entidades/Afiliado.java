@@ -12,10 +12,10 @@ public class Afiliado extends Usuario implements Ireporte{
     public Afiliado() {
     }
 
-    @Override
+    /*@Override
     public Boolean registrar() {
         return null;
-    }
+    }*/
 
     public Afiliado(Integer id, String documento, String nombres, String correo, Integer ubicacion, Integer valorMensualidad) {
         super(id, documento, nombres, correo, ubicacion);

@@ -10,10 +10,10 @@ public class EntidadCultural extends Empresa implements Ireporte {
 
 
     private EntidadCulturalValidacion validacion = new EntidadCulturalValidacion();
-    @Override
+    /*@Override
     public Boolean cobrar() {
         return false;
-    }
+    }*/
 
     public EntidadCultural() {
     }
